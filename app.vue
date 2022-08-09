@@ -26,7 +26,7 @@
   </div>
 </template>
 <script setup>  
-  import linksDt from '~/public/data/links.json';
+  import linksDt from './links.json';
   
   var links = ref([]);
   var cards = '';
