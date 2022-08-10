@@ -18,7 +18,7 @@
     
   </div>
 </template>
-<script setup>  
+<script setup>
   
   var links = ref([]);
   var cards = '';
