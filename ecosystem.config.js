@@ -2,17 +2,17 @@ module.exports = {
     apps: [
       {
         name: 'Ebconv',
+        port: 3002,
         script: './.output/server/index.mjs',
         cwd:"/var/www/ebserhconvoca/",
         instances: 'max',
         env_development: {
           NODE_ENV: "development",
-          NODE_PORT: 3001,
         },
         env_production: {
           NODE_ENV: "production",
-          NODE_PORT: 3001,
-        }        
+        },
+        exec_mode: 'cluster'
       }
     ]
   }
